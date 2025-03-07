@@ -1,0 +1,10 @@
+[project]
+name = "bookmarksync"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pre-commit>=4.1.0",
+    "pysqlite3>=0.5.4",
+]
