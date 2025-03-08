@@ -45,6 +45,7 @@ class FirefoxBookmarkSynchronizer(BookmarkSynchronizer):
     def extract_bookmarks(self):
         """
         Extract bookmarks from Firefox profile sqlite database
+        cf. https://gist.github.com/v3l0c1r4pt0r/15ef7181b7c4546963da68bc3b31c169
         """
         # Path to Firefox's places.sqlite database
         firefox_db_path = os.path.join(self.profile_path, "places.sqlite")
