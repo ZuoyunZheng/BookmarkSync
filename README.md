@@ -7,7 +7,7 @@ The idea is to run Airflow in docker container to monitor Firefox and Chrome pro
 ### Bookmarks classes and BookmarkSyncOperator classes
 
 ### Firefox bookmarks
-Saved in sqlite database under `~/.mozilla/firefox/<profile>/places.sqlite` with a rough schema [https://wiki.mozilla.org/images/0/08/Places.sqlite.schema.pdf](here) (not up-to-date anymore).
+Saved in sqlite database under `~/.mozilla/firefox/<profile>/places.sqlite` with a rough schema [here](https://wiki.mozilla.org/images/0/08/Places.sqlite.schema.pdf) (not up-to-date anymore).
 
 ### Chrome bookmarks
 
