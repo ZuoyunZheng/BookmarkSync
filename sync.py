@@ -126,12 +126,12 @@ class FirefoxBookmarkSynchronizer(BookmarkSynchronizer):
             self._populate(conn, subdirs)
 
     def _print_dir(self, directory, level):
-        indent_hdr = "\t" * level
-        indent = "\t" * (level + 1)
+        indent_hdr = "    " * level
+        indent = "    " * (level + 1)
         # begin directory
         out = """
 {}<DT><H3 ADD_DATE="{:10.10}" LAST_MODIFIED="{:10.10}">{}</H3>
-{}<DL><p>""".format(
+{}<DL><p>\n""".format(
             indent_hdr,
             str(directory["created"]),
             str(directory["modified"]),
@@ -148,7 +148,7 @@ class FirefoxBookmarkSynchronizer(BookmarkSynchronizer):
         )
         for i in bookmarks_by_position:
             bm = bookmarks_by_position[i]
-            out += '{}<DT><A HREF="{}" ADD_DATE="{:10.10}">{}</A>'.format(
+            out += '{}<DT><A HREF="{}" ADD_DATE="{:10.10}">{}</A>\n'.format(
                 indent, bm["url"], str(bm["created"]), bm["title"]
             )
         # for bm in directory['bookmarks']:

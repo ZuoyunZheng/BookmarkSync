@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "lz4>=4.4.3",
     "pre-commit>=4.1.0",
     "pysqlite3>=0.5.4",
 ]
